@@ -1,0 +1,37 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+            "title": "My custom Point",
+            "description":"Awesome isn't it ?",
+            "image": "src='https://picsum.photos/200'"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            3.523485,
+            50.357932
+          ]
+        }
+      },
+
+      {
+        "type": "Feature",
+        "properties": {
+            "title": "My  second custom Point",
+            "description":"Cool",
+            "image": "src='https://picsum.photos/200'"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.690206,
+            50.741568
+          ]
+        }
+      }
+
+    ]
+}

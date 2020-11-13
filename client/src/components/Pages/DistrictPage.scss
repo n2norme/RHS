@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:ital@0;1&display=swap');
+
+
+
+.district-background{
+    background-color: #362d81;
+    
+}
+
+
+
+.description{
+    color: white;
+    font-family: 'Roboto';
+    text-align: left;
+}
+
+.description-title{
+    color: white;
+}
+
+.description-wrapper{
+    width: 30vw;
+}
+
+.map-preview{
+    width: 90vw;
+    height: 60vh;
+    position: relative;
+    left: 50%;
+    margin-top: 30px;
+    
+}
+
+
+
+
+.final-button{
+    margin-top: 200px;
+    margin-bottom: auto;
+    background-color: #58aca8;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 20px;
+    width: 500px;
+    
+}
+
+@media (max-width:414px){
+    .map-preview{
+        position: relative;
+        left: 0%;
+        width: 90vw;
+        height: 40vh;
+    }
+}
+
+
+
+@media (max-width:375px){
+    .map-preview{
+        position: relative;
+        left: 0%;
+        width: 90vw;
+        height: 40vh;
+    }
+}
+
+@media (min-width:768px){
+    .map-preview{
+        width: 45vw;
+        height: 40vh;
+    }
+}

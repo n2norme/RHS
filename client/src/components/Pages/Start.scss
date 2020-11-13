@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:ital@0;1&display=swap');
+
+.box{
+    width: 70vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border: 1px solid;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    background-color: white;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 10vw;
+    -webkit-border-radius: 9px;
+       -moz-border-radius: 9px;
+            border-radius: 9px;
+    
+    
+    
+}
+
+.background{
+    background-color: #F7F7FA;
+    height: 100vh;
+}
+
+.box h6{
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: left;
+}
+
+.box h5{
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+}
+
+
+@media (min-width:768px){
+    .box{
+        width: 40vw;
+        height: 10vh;
+    }
+}
+
+@media (width:768px){
+    .box{
+        width: 70vw;
+        height: 10vh;
+    }
+}
+
+.heading h2{
+    font-family: 'Roboto';
+    color: white;
+    font-size: 30px;
+}

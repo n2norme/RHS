@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:ital@0;1&display=swap');
+
+
+.logo{
+    width: 4cm;
+    height: 2cm;
+    margin-right: 50px;
+}
+
+.rhs-navbar{
+    background-color: #362d81;
+    
+    
+}
+
+.links{
+    color: white;
+    font-size: 17px;
+    font-family: 'Fredoka One';
+}
+
+.navbar-nav,
+.mr-auto {
+-webkit-box-flex: 1;
+-webkit-flex: 1;
+   -moz-box-flex: 1;
+    -ms-flex: 1;
+        flex: 1;
+margin: auto !important;
+display: -webkit-box;
+display: -webkit-flex;
+display: -moz-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: justify;
+-webkit-justify-content: space-between;
+   -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+}
+
+@media (max-width:375px){
+    .logo{
+        display: none;
+    }
+}

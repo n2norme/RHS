@@ -1,0 +1,26 @@
+:root{
+    --path: url("../Images/WelcomeDesktop.jpeg");
+    
+  }
+
+.district-image{
+    background-image: var(--path);
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+            background-size: cover;
+    height: 60vh;
+    width: 100%; 
+}
+
+.district-caption{
+    position: relative;
+    top: 80%;
+}
+
+#district-title{
+    color: white;
+    font-size: 70px;
+    font-family: 'Roboto';
+}

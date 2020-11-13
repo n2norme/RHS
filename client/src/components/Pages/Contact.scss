@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:ital@0;1&display=swap');
+
+#contact{
+    background-color: #362d81;
+}
+
+#contact-title{
+    font-family: 'Fredoka One';
+    color: white;
+    font-size: 50px;
+}
+
+
+
+.form-input{
+    width: 50vw;
+    height: 6vh;
+    margin-left: 5vw;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    
+}
+
+.form-container{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+   
+}
+
+.form-label{
+    color: white;
+    margin-left: 5vw;
+    font-family: 'Roboto';
+    font-size: 25px;
+    
+}
+
+
+
+.form-message{
+    width: 90vw;
+    height: 15vh;
+    margin-left: 5vw;
+    margin-bottom: 100px;
+    -webkit-border-radius: 9px;
+       -moz-border-radius: 9px;
+            border-radius: 9px;
+}
+
+.send-button{
+    background-color: #58aca8;
+    width: 200px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-border-radius: 9px;
+       -moz-border-radius: 9px;
+            border-radius: 9px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 25px;
+}
+
+@media (min-width:768px){
+    .form-message{
+        height: 40vh;
+    }
+}

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:ital@0;1&display=swap');
+
+.image{
+    background-image: url('../../Images/WelcomeDesktop.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+            background-size: cover;
+    height: 100vh;
+    width: 100%;
+    min-height: 100%;
+}
+
+#main-title{
+    color: white;
+    font-size: 90px;
+    font-family: 'Fredoka One';
+    text-align: center;
+}
+
+.caption{
+    
+    position: relative;
+    top: 40%;
+    
+}
+
+#subtitle{
+    color: white;
+    font-size: 50px;
+    font-family: 'Roboto';
+    text-align: center;
+}
+
+.paragraph{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+
+
+@media (max-width:768px){
+    #subtitle{
+        font-size: 30px;
+        text-align: center;
+    }
+    #main-title{
+        font-size: 60px;
+    }
+}
