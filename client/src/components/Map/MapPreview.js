@@ -34,7 +34,7 @@ const MapPreview = () => {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-        <div className='map-container' ref={mapContainerRef} />
+        <div className='map-preview-container' ref={mapContainerRef} />
   );
 };
 

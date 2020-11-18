@@ -77,6 +77,16 @@
     font-size: 25px;
 }
 
+.message{
+    color:white;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 @media (min-width:768px){
     .form-message{
         height: 40vh;

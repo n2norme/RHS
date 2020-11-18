@@ -9,20 +9,31 @@ router.post('/', [
     check('lastname', 'Lastname is required').not().isEmpty(),
     check('email', 'Please include a valide email').isEmail(),
     check('message', 'Please enter a message').not().isEmpty()
-], (req,res) => {
+], async (req,res) => {
     const errors = validationResult(req);
     if(!errors.isEmpty()){
         return res.status(400).json({errors: errors.array()});
     }
 
-    let newContact = new Contact(req.body);
-    newContact.save()
-    .then(item => {
-        res.send("Ok, saved to database");
-    })
-    .catch(err => {
-        res.status(400).send("Unable to save to database");
-    });
+    const { firstname, lastname, email,message } = req.body;
+
+    try {
+
+        let newContact = new Contact({
+            firstname,
+            lastname,
+            email,
+            message
+
+        });
+
+        await newContact.save();
+        await res.status(200).send('Contact form successfully saved to the database');
+        
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).send('Server error, could not save to the database');
+    }
     
 });
 

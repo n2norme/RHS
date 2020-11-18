@@ -62,8 +62,15 @@ const Map = () => {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-        <div className='map-container' ref={mapContainerRef} />
-  );
+      <section id="map">
+        <div ref={mapContainerRef} className="map-container" />
+        <div className="caption-paragraph">
+          <h3>Vous visitez le quartier Dutemple</h3>
+          <h4>Naviguez et cliquez sur les points</h4>
+        </div>
+        </section>
+  )
+        
 };
 
 export default Map;

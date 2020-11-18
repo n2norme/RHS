@@ -9,6 +9,7 @@ import Start from './components/Pages/Start';
 import './App.scss';
 import Footer from './components/Footer';
 import DistrictPage from './components/Pages/DistrictPage';
+import Map  from '../src/components/Map/Map';
 
 
 
@@ -41,6 +42,9 @@ function App() {
       </Route>
       <Route path="/jemappes" exact>
         <DistrictPage/>
+      </Route>
+      <Route path="/dutemple/map" exact>
+        <Map/>
       </Route>
     </Switch>
     <Footer/>

@@ -30,7 +30,7 @@ function Contact() {
 
     function MessageSent(){
         if(isSent){
-            return (<p>Message envoyé</p>)
+            return (<p className="message">Message envoyé avec succès</p>)
         }else{
             return null;
         }
@@ -50,10 +50,10 @@ function Contact() {
                     <label htmlFor="message" className="form-label">Votre message</label>
                     <textarea className="form-message" id="message" rows="10" onChange={(e) => setMessage(e.target.value)}></textarea>
                     <button type="submit" className="send-button">Envoyer</button>
-                    <MessageSent/>
+                    
                 </div>
             </form>
-
+            <MessageSent/>
         </section>
     )
 
