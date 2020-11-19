@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:ital@0;1&display=swap');
+
+.form-signin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.form-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    align-items: center;
+    justify-items: center;
+}
+
+.logo-form{
+   width: 50%;
+   margin-top: 100px;
+
+}
+.login-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.login-form-input{
+    width: 50vw;
+    height: 10vh;
+    margin-bottom: 50px;
+}
+
+.connect-button{
+    background-color: #58aca8;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 30px;
+    border-radius: 9px;
+}
+
+.login-title{
+    font-family: 'Fredoka One';
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

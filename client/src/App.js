@@ -10,6 +10,7 @@ import './App.scss';
 import Footer from './components/Footer';
 import DistrictPage from './components/Pages/DistrictPage';
 import Map  from '../src/components/Map/Map';
+import Login from '../src/components/Pages/Login';
 
 
 
@@ -45,6 +46,9 @@ function App() {
       </Route>
       <Route path="/dutemple/map" exact>
         <Map/>
+      </Route>
+      <Route path="/login" exact>
+        <Login/>
       </Route>
     </Switch>
     <Footer/>

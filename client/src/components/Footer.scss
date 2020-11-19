@@ -1,5 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:ital@0;1&display=swap');
+
 .icons{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+}
+
+
+
+.connect{
+    color: white;
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
