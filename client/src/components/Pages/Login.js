@@ -65,27 +65,3 @@ function Login() {
 }
 
 export default Login;
-
-
-{/* <div className="container-fluid">
-<form onSubmit={e=> onSubmit(e)}>
-    <h1>Login : </h1>
-    <input 
-        type="email"
-        name="email"
-        placeholder="Entrez votre mail"
-        value={email}
-        onChange={e => onChange(e)}
-        required
-    />
-    <input 
-        type="password"
-        name="password"
-        placeholder="Entrez votre mot de passe"
-        value={password}
-        onChange={e => onChange(e)}
-        required
-    />
-    <input type="submit" value="Submit"/>
-</form>
-</div>  */}
