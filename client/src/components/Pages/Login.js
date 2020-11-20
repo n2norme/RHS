@@ -1,6 +1,9 @@
 import {React, useState} from 'react';
 import axios from 'axios';
+import {Redirect} from 'react-router-dom';
 import './Login.scss';
+
+
 
 
 function Login() {
@@ -10,6 +13,8 @@ function Login() {
         password:''
     });
     
+    const [isAuth,setIsAuth] = useState(false);
+
     const {email,password} = loginData;
 
 
@@ -19,14 +24,12 @@ function Login() {
 
     const onSubmit = async (e) =>{
         e.preventDefault();
-        
-        
-        try {
 
+        try {
             const user = {
                 email,
                 password
-            };
+            }
 
             const config = {
                 headers:{
@@ -35,13 +38,33 @@ function Login() {
             };
 
             const body = JSON.stringify(user);
+
             const res = await axios.post('/api/auth',body,config);
-            console.log(res.data);
+            const token = res.data.token;
+            window.localStorage.setItem('x-auth-token', token);
+                
+            const connect = await axios.get('/api/private/dashboard',{ headers: {"x-auth-token" : `${token}`} })
+            console.log(connect.data);
+
+            if(window.localStorage.getItem('x-auth-token')){
+                setIsAuth(true);
+            }
             
+            
+
         } catch (err) {
             console.error(err.response.data);
         }
     }
+
+    if(isAuth){
+        return <Redirect to="/dashboard"/>
+    }
+      
+
+    
+    
+    
 
     return (
         <section id="login">
@@ -64,4 +87,7 @@ function Login() {
     )
 }
 
+
+
 export default Login;
+  
