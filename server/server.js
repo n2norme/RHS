@@ -19,12 +19,14 @@ app.use('/api/users', require('./routes/api/users'));
 app.use('/api/auth', require('./routes/api/auth'));
 app.use('/api/contact',require('./routes/api/contact'));
 app.use('/api/private',require('./routes/api/private'));
+app.use('/api/map',require('./routes/api/map'));
+app.use('/api/points',require('./routes/api/points'));
 
 
 
-app.get('*', (req,res) => {
-  res.send('Here is the error 404');
-});
+// app.get('*', (req,res) => {
+//   res.send('Here is the error 404');
+// });
 
 app.listen(PORT, () => {
   console.log(`App listening at http://localhost:${PORT}`)
