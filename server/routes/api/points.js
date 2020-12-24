@@ -52,7 +52,7 @@ router.post('/:id', [
         });
         
         await newPoint.save();
-        await Maps.updateOne({_id:mapId}, {$addToSet:{points:[newPoint]}});
+        await Maps.updateOne({_id:mapId}, {$push:{points:[newPoint]}}); // Add the new point to the array of points
         await res.status(200).send("New point added to the map in database");
         
     } catch (err) {

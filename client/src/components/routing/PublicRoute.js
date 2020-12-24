@@ -7,7 +7,7 @@ export const PublicRoute = ({ component: Component , ...rest})=>{
     return (
         <Route {...rest}  component={(props)=>(
             <Fragment>
-                <Header /> {/* HEADER ALWAYS VISIBLE */}
+                <Header />
                 <Component {...props} />
                 <Footer/>
             </Fragment>

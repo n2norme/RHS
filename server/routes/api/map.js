@@ -6,7 +6,7 @@ const Maps = require('../../models/Maps');
 
 
 
-router.get('/:name/points',  async (req,res) => {
+router.get('/:name/points',  async (req,res) => { // Get alll points of a map by giving the map's name in parameter
     
 
     try {
@@ -22,8 +22,42 @@ router.get('/:name/points',  async (req,res) => {
     }
  });
 
+ router.get('/',  async (req,res) => { // Get alll maps
+    
+
+    try {
+
+        const maps =  await Maps.find();
+        res.send(maps);
+        
+    } catch (err) {
+
+        console.log(err);
+
+        
+    }
+ });
+
+
+ router.get('/:id',  async (req,res) => { // Get one map
+    
+
+    try {
+
+        const map =  await Maps.findById(req.params.id);
+        res.send(map);
+        
+    } catch (err) {
+
+        console.log(err);
+
+        
+    }
+ });
+
+
 router.post('/', [
-    check('name', 'Please enter the name of the Map').exists(),
+    check('name', 'Please enter the name of the Map').exists(), // Create a new Map
     check('center','Location is required').exists()
 ], async (req,res) => {
     const errors = validationResult(req);

@@ -24,9 +24,9 @@ app.use('/api/points',require('./routes/api/points'));
 
 
 
-// app.get('*', (req,res) => {
-//   res.send('Here is the error 404');
-// });
+app.get('*', (req,res) => {
+  res.send('Here is the error 404');
+});
 
 app.listen(PORT, () => {
   console.log(`App listening at http://localhost:${PORT}`)
